@@ -63,6 +63,7 @@ class FaceLoginView(APIView):
         return Response({"error": "Face not recognized"}, status=401)
 
 
+from django.shortcuts import render
 def home(request):
     return render(request, 'home.html')
 
@@ -72,4 +73,4 @@ def webauth(request):
     return render(request, 'webauth_register.html')
 
 def facereg(request):
-    return render(request, 'register.html')
+    return render(request, 'face_register.html')

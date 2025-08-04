@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import RegisterWithFace, FaceLoginView, StartWebAuthnRegister, home, facereg, webauthreg
+from .views import RegisterWithFace, FaceLoginView, StartWebAuthnRegister, home, facereg, webauth
 
 urlpatterns = [
     path('', home, name='home'),
