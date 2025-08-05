@@ -74,3 +74,6 @@ def webauth(request):
 
 def facereg(request):
     return render(request, 'face_register.html')
+
+def face_login(request):
+    return render(request, 'face_login.html')

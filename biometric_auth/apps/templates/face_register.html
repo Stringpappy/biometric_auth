@@ -139,7 +139,7 @@
       formData.append('face_image', capturedBlob, 'face.jpg');
 
       try {
-        const response = await fetch('/api/register-face/', {
+        const response = await fetch('https://127.0.0.1:8000/api/register/face/', {
           method: 'POST',
           body: formData
         });
